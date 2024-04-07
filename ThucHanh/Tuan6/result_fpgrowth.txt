@@ -1,0 +1,181 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 100 -T 0 -C 0.95 -D 0.05 -U 1.0 -M 0.1
+Relation:     plants_encoded
+Instances:    34781
+Attributes:   70
+              name
+              co
+              dengl
+              ca
+              ga
+              ct
+              pr
+              lb
+              tx
+              la
+              tn
+              pa
+              pe
+              mn
+              de
+              dc
+              hi
+              yt
+              me
+              md
+              ma
+              mb
+              ut
+              mo
+              fraspm
+              mi
+              nu
+              mt
+              qc
+              ms
+              va
+              ab
+              vi
+              ak
+              al
+              ar
+              vt
+              il
+              in
+              ia
+              az
+              id
+              nh
+              ks
+              nj
+              nm
+              nb
+              nc
+              nd
+              ne
+              nf
+              ny
+              ns
+              nt
+              ri
+              nv
+              wa
+              bc
+              wi
+              wv
+              fl
+              wy
+              on
+              ok
+              oh
+              sk
+              sc
+              ky
+              or
+              sd
+=== Associator model (full training set) ===
+
+FPGrowth found 553 rules (displaying top 100)
+
+  1. [nc=False]: 28855 ==> [name=False]: 28855   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  2. [fl=False]: 28160 ==> [name=False]: 28160   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  3. [ca=True]: 11676 ==> [name=False]: 11676   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  4. [tx=True]: 8483 ==> [name=False]: 8483   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  5. [or=True]: 7028 ==> [name=False]: 7028   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  6. [az=True]: 6778 ==> [name=False]: 6778   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  7. [nm=True]: 6403 ==> [name=False]: 6403   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  8. [ut=True]: 6041 ==> [name=False]: 6041   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+  9. [ga=True]: 5942 ==> [name=False]: 5942   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 10. [ny=True]: 5773 ==> [name=False]: 5773   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 11. [al=True]: 5702 ==> [name=False]: 5702   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 12. [nv=True]: 5670 ==> [name=False]: 5670   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 13. [wa=True]: 5654 ==> [name=False]: 5654   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 14. [va=True]: 5638 ==> [name=False]: 5638   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 15. [pe=True]: 5515 ==> [name=False]: 5515   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 16. [co=True]: 5465 ==> [name=False]: 5465   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 17. [sc=True]: 5432 ==> [name=False]: 5432   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 18. [il=True]: 5167 ==> [name=False]: 5167   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 19. [la=True]: 5154 ==> [name=False]: 5154   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 20. [id=True]: 5129 ==> [name=False]: 5129   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 21. [md=True]: 5108 ==> [name=False]: 5108   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 22. [on=True]: 5068 ==> [name=False]: 5068   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 23. [ma=True]: 4963 ==> [name=False]: 4963   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 24. [tn=True]: 4900 ==> [name=False]: 4900   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 25. [bc=True]: 4875 ==> [name=False]: 4875   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 26. [nj=True]: 4822 ==> [name=False]: 4822   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 27. [ms=True]: 4815 ==> [name=False]: 4815   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 28. [mt=True]: 4800 ==> [name=False]: 4800   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 29. [pr=True]: 4781 ==> [name=False]: 4781   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 30. [oh=True]: 4772 ==> [name=False]: 4772   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 31. [mi=True]: 4734 ==> [name=False]: 4734   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 32. [wy=True]: 4710 ==> [name=False]: 4710   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 33. [ok=True]: 4651 ==> [name=False]: 4651   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 34. [mo=True]: 4638 ==> [name=False]: 4638   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 35. [ar=True]: 4610 ==> [name=False]: 4610   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 36. [ky=True]: 4555 ==> [name=False]: 4555   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 37. [in=True]: 4440 ==> [name=False]: 4440   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 38. [ct=True]: 4391 ==> [name=False]: 4391   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 39. [wi=True]: 4321 ==> [name=False]: 4321   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 40. [qc=True]: 4272 ==> [name=False]: 4272   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 41. [wv=True]: 4062 ==> [name=False]: 4062   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 42. [me=True]: 3969 ==> [name=False]: 3969   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 43. [mn=True]: 3929 ==> [name=False]: 3929   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 44. [ks=True]: 3869 ==> [name=False]: 3869   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 45. [hi=True]: 3804 ==> [name=False]: 3804   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 46. [vt=True]: 3713 ==> [name=False]: 3713   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 47. [ia=True]: 3652 ==> [name=False]: 3652   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 48. [nh=True]: 3635 ==> [name=False]: 3635   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 49. [de=True]: 3630 ==> [name=False]: 3630   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 50. [nc=False, fl=False]: 25930 ==> [name=False]: 25930   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 51. [nc=False, ca=True]: 9807 ==> [name=False]: 9807   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 52. [nc=False, tx=True]: 5094 ==> [name=False]: 5094   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 53. [nc=False, or=True]: 5356 ==> [name=False]: 5356   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 54. [nc=False, az=True]: 5348 ==> [name=False]: 5348   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 55. [nc=False, nm=True]: 4829 ==> [name=False]: 4829   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 56. [nc=False, ut=True]: 4692 ==> [name=False]: 4692   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 57. [nc=False, nv=True]: 4645 ==> [name=False]: 4645   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 58. [nc=False, wa=True]: 4031 ==> [name=False]: 4031   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 59. [nc=False, co=True]: 4036 ==> [name=False]: 4036   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 60. [nc=False, id=True]: 3807 ==> [name=False]: 3807   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 61. [nc=False, pr=True]: 3878 ==> [name=False]: 3878   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 62. [fl=False, ca=True]: 10065 ==> [name=False]: 10065   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 63. [fl=False, tx=True]: 4833 ==> [name=False]: 4833   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 64. [fl=False, or=True]: 5868 ==> [name=False]: 5868   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 65. [fl=False, az=True]: 5455 ==> [name=False]: 5455   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 66. [fl=False, nm=True]: 5031 ==> [name=False]: 5031   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 67. [fl=False, ut=True]: 5051 ==> [name=False]: 5051   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 68. [fl=False, nv=True]: 4854 ==> [name=False]: 4854   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 69. [fl=False, wa=True]: 4610 ==> [name=False]: 4610   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 70. [fl=False, co=True]: 4414 ==> [name=False]: 4414   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 71. [fl=False, id=True]: 4268 ==> [name=False]: 4268   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 72. [fl=False, bc=True]: 3975 ==> [name=False]: 3975   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 73. [fl=False, mt=True]: 3916 ==> [name=False]: 3916   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 74. [fl=False, wy=True]: 3866 ==> [name=False]: 3866   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 75. [ca=True, or=True]: 5522 ==> [name=False]: 5522   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 76. [ca=True, az=True]: 3868 ==> [name=False]: 3868   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 77. [ca=True, ut=True]: 3852 ==> [name=False]: 3852   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 78. [ca=True, nv=True]: 4701 ==> [name=False]: 4701   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 79. [ca=True, wa=True]: 4086 ==> [name=False]: 4086   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 80. [ca=True, id=True]: 3564 ==> [name=False]: 3564   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 81. [tx=True, nm=True]: 3924 ==> [name=False]: 3924   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 82. [tx=True, ga=True]: 3612 ==> [name=False]: 3612   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 83. [tx=True, al=True]: 3746 ==> [name=False]: 3746   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 84. [tx=True, sc=True]: 3479 ==> [name=False]: 3479   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 85. [tx=True, la=True]: 4204 ==> [name=False]: 4204   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 86. [tx=True, ms=True]: 3660 ==> [name=False]: 3660   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 87. [tx=True, ok=True]: 4104 ==> [name=False]: 4104   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 88. [tx=True, ar=True]: 3668 ==> [name=False]: 3668   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 89. [or=True, nv=True]: 3500 ==> [name=False]: 3500   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 90. [or=True, wa=True]: 4959 ==> [name=False]: 4959   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 91. [or=True, id=True]: 4199 ==> [name=False]: 4199   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 92. [or=True, bc=True]: 3679 ==> [name=False]: 3679   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 93. [or=True, mt=True]: 3495 ==> [name=False]: 3495   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 94. [az=True, nm=True]: 4723 ==> [name=False]: 4723   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 95. [az=True, ut=True]: 3858 ==> [name=False]: 3858   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 96. [nm=True, ut=True]: 3596 ==> [name=False]: 3596   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 97. [nm=True, co=True]: 3932 ==> [name=False]: 3932   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 98. [ut=True, nv=True]: 4019 ==> [name=False]: 4019   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+ 99. [ut=True, co=True]: 4005 ==> [name=False]: 4005   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+100. [ut=True, wy=True]: 3495 ==> [name=False]: 3495   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+

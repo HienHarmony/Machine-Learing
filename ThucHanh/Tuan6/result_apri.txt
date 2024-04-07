@@ -1,0 +1,199 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 0 -C 0.95 -D 0.05 -U 1.0 -M 0.2 -S -1.0 -c -1
+Relation:     plants_encoded
+Instances:    34781
+Attributes:   70
+              name
+              co
+              dengl
+              ca
+              ga
+              ct
+              pr
+              lb
+              tx
+              la
+              tn
+              pa
+              pe
+              mn
+              de
+              dc
+              hi
+              yt
+              me
+              md
+              ma
+              mb
+              ut
+              mo
+              fraspm
+              mi
+              nu
+              mt
+              qc
+              ms
+              va
+              ab
+              vi
+              ak
+              al
+              ar
+              vt
+              il
+              in
+              ia
+              az
+              id
+              nh
+              ks
+              nj
+              nm
+              nb
+              nc
+              nd
+              ne
+              nf
+              ny
+              ns
+              nt
+              ri
+              nv
+              wa
+              bc
+              wi
+              wv
+              fl
+              wy
+              on
+              ok
+              oh
+              sk
+              sc
+              ky
+              or
+              sd
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.95 (33042 instances)
+Minimum metric <confidence>: 0.95
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 6
+
+Size of set of large itemsets L(2): 13
+
+Size of set of large itemsets L(3): 12
+
+Size of set of large itemsets L(4): 4
+
+Best rules found:
+
+  1. pa=False 34600 ==> name=False 34600    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  2. dengl=False 34302 ==> name=False 34302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  3. dengl=False pa=False 34121 ==> name=False 34121    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  4. nu=False 33802 ==> name=False 33802    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  5. pa=False nu=False 33621 ==> name=False 33621    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  6. dengl=False nu=False 33601 ==> name=False 33601    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  7. fraspm=False 33571 ==> name=False 33571    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  8. fraspm=False 33571 ==> dengl=False 33571    <conf:(1)> lift:(1.01) lev:(0.01) [462] conv:(462.34)
+  9. dengl=False fraspm=False 33571 ==> name=False 33571    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 10. name=False fraspm=False 33571 ==> dengl=False 33571    <conf:(1)> lift:(1.01) lev:(0.01) [462] conv:(462.34)
+ 11. fraspm=False 33571 ==> name=False dengl=False 33571    <conf:(1)> lift:(1.01) lev:(0.01) [462] conv:(462.34)
+ 12. dengl=False pa=False nu=False 33420 ==> name=False 33420    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 13. pa=False fraspm=False 33390 ==> name=False 33390    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 14. pa=False fraspm=False 33390 ==> dengl=False 33390    <conf:(1)> lift:(1.01) lev:(0.01) [459] conv:(459.84)
+ 15. dengl=False pa=False fraspm=False 33390 ==> name=False 33390    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 16. name=False pa=False fraspm=False 33390 ==> dengl=False 33390    <conf:(1)> lift:(1.01) lev:(0.01) [459] conv:(459.84)
+ 17. pa=False fraspm=False 33390 ==> name=False dengl=False 33390    <conf:(1)> lift:(1.01) lev:(0.01) [459] conv:(459.84)
+ 18. lb=False 33348 ==> name=False 33348    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 19. dengl=False lb=False 33288 ==> name=False 33288    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 20. lb=False pa=False 33167 ==> name=False 33167    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 21. lb=False nu=False 33118 ==> name=False 33118    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 22. dengl=False lb=False pa=False 33107 ==> name=False 33107    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 23. dengl=False lb=False nu=False 33058 ==> name=False 33058    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 24. lb=False 33348 ==> dengl=False 33288    <conf:(1)> lift:(1.01) lev:(0.01) [399] conv:(7.53)
+ 25. name=False lb=False 33348 ==> dengl=False 33288    <conf:(1)> lift:(1.01) lev:(0.01) [399] conv:(7.53)
+ 26. lb=False 33348 ==> name=False dengl=False 33288    <conf:(1)> lift:(1.01) lev:(0.01) [399] conv:(7.53)
+ 27. lb=False pa=False 33167 ==> dengl=False 33107    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.49)
+ 28. name=False lb=False pa=False 33167 ==> dengl=False 33107    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.49)
+ 29. lb=False pa=False 33167 ==> name=False dengl=False 33107    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.49)
+ 30. lb=False nu=False 33118 ==> dengl=False 33058    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.48)
+ 31. name=False lb=False nu=False 33118 ==> dengl=False 33058    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.48)
+ 32. lb=False nu=False 33118 ==> name=False dengl=False 33058    <conf:(1)> lift:(1.01) lev:(0.01) [396] conv:(7.48)
+ 33. name=False 34781 ==> pa=False 34600    <conf:(0.99)> lift:(1) lev:(0) [0] conv:(0.99)
+ 34. dengl=False 34302 ==> pa=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.98)
+ 35. name=False dengl=False 34302 ==> pa=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.98)
+ 36. dengl=False 34302 ==> name=False pa=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.98)
+ 37. nu=False 33802 ==> pa=False 33621    <conf:(0.99)> lift:(1) lev:(-0) [-5] conv:(0.97)
+ 38. name=False nu=False 33802 ==> pa=False 33621    <conf:(0.99)> lift:(1) lev:(-0) [-5] conv:(0.97)
+ 39. nu=False 33802 ==> name=False pa=False 33621    <conf:(0.99)> lift:(1) lev:(-0) [-5] conv:(0.97)
+ 40. dengl=False nu=False 33601 ==> pa=False 33420    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 41. name=False dengl=False nu=False 33601 ==> pa=False 33420    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 42. dengl=False nu=False 33601 ==> name=False pa=False 33420    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 43. fraspm=False 33571 ==> pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 44. name=False fraspm=False 33571 ==> pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 45. fraspm=False 33571 ==> name=False pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 46. dengl=False fraspm=False 33571 ==> pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 47. fraspm=False 33571 ==> dengl=False pa=False 33390    <conf:(0.99)> lift:(1.01) lev:(0.01) [456] conv:(3.5)
+ 48. name=False dengl=False fraspm=False 33571 ==> pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 49. dengl=False fraspm=False 33571 ==> name=False pa=False 33390    <conf:(0.99)> lift:(1) lev:(-0) [-6] conv:(0.96)
+ 50. name=False fraspm=False 33571 ==> dengl=False pa=False 33390    <conf:(0.99)> lift:(1.01) lev:(0.01) [456] conv:(3.5)
+ 51. fraspm=False 33571 ==> name=False dengl=False pa=False 33390    <conf:(0.99)> lift:(1.01) lev:(0.01) [456] conv:(3.5)
+ 52. lb=False 33348 ==> pa=False 33167    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 53. name=False lb=False 33348 ==> pa=False 33167    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 54. lb=False 33348 ==> name=False pa=False 33167    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 55. dengl=False lb=False 33288 ==> pa=False 33107    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 56. name=False dengl=False lb=False 33288 ==> pa=False 33107    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 57. dengl=False lb=False 33288 ==> name=False pa=False 33107    <conf:(0.99)> lift:(1) lev:(-0) [-7] conv:(0.95)
+ 58. nu=False 33802 ==> dengl=False 33601    <conf:(0.99)> lift:(1.01) lev:(0.01) [264] conv:(2.3)
+ 59. name=False nu=False 33802 ==> dengl=False 33601    <conf:(0.99)> lift:(1.01) lev:(0.01) [264] conv:(2.3)
+ 60. nu=False 33802 ==> name=False dengl=False 33601    <conf:(0.99)> lift:(1.01) lev:(0.01) [264] conv:(2.3)
+ 61. pa=False nu=False 33621 ==> dengl=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [262] conv:(2.29)
+ 62. name=False pa=False nu=False 33621 ==> dengl=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [262] conv:(2.29)
+ 63. pa=False nu=False 33621 ==> name=False dengl=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [262] conv:(2.29)
+ 64. lb=False 33348 ==> nu=False 33118    <conf:(0.99)> lift:(1.02) lev:(0.02) [708] conv:(4.06)
+ 65. name=False lb=False 33348 ==> nu=False 33118    <conf:(0.99)> lift:(1.02) lev:(0.02) [708] conv:(4.06)
+ 66. lb=False 33348 ==> name=False nu=False 33118    <conf:(0.99)> lift:(1.02) lev:(0.02) [708] conv:(4.06)
+ 67. dengl=False lb=False 33288 ==> nu=False 33058    <conf:(0.99)> lift:(1.02) lev:(0.02) [706] conv:(4.06)
+ 68. name=False dengl=False lb=False 33288 ==> nu=False 33058    <conf:(0.99)> lift:(1.02) lev:(0.02) [706] conv:(4.06)
+ 69. dengl=False lb=False 33288 ==> name=False nu=False 33058    <conf:(0.99)> lift:(1.02) lev:(0.02) [706] conv:(4.06)
+ 70. lb=False 33348 ==> dengl=False pa=False 33107    <conf:(0.99)> lift:(1.01) lev:(0.01) [391] conv:(2.61)
+ 71. name=False lb=False 33348 ==> dengl=False pa=False 33107    <conf:(0.99)> lift:(1.01) lev:(0.01) [391] conv:(2.61)
+ 72. lb=False 33348 ==> name=False dengl=False pa=False 33107    <conf:(0.99)> lift:(1.01) lev:(0.01) [391] conv:(2.61)
+ 73. lb=False 33348 ==> dengl=False nu=False 33058    <conf:(0.99)> lift:(1.03) lev:(0.02) [841] conv:(3.89)
+ 74. name=False lb=False 33348 ==> dengl=False nu=False 33058    <conf:(0.99)> lift:(1.03) lev:(0.02) [841] conv:(3.89)
+ 75. lb=False 33348 ==> name=False dengl=False nu=False 33058    <conf:(0.99)> lift:(1.03) lev:(0.02) [841] conv:(3.89)
+ 76. nu=False 33802 ==> dengl=False pa=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [259] conv:(1.67)
+ 77. name=False nu=False 33802 ==> dengl=False pa=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [259] conv:(1.67)
+ 78. nu=False 33802 ==> name=False dengl=False pa=False 33420    <conf:(0.99)> lift:(1.01) lev:(0.01) [259] conv:(1.67)
+ 79. name=False 34781 ==> dengl=False 34302    <conf:(0.99)> lift:(1) lev:(0) [0] conv:(1)
+ 80. pa=False 34600 ==> dengl=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.99)
+ 81. name=False pa=False 34600 ==> dengl=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.99)
+ 82. pa=False 34600 ==> name=False dengl=False 34121    <conf:(0.99)> lift:(1) lev:(-0) [-2] conv:(0.99)
+ 83. dengl=False nu=False 33601 ==> lb=False 33058    <conf:(0.98)> lift:(1.03) lev:(0.02) [841] conv:(2.54)
+ 84. name=False dengl=False nu=False 33601 ==> lb=False 33058    <conf:(0.98)> lift:(1.03) lev:(0.02) [841] conv:(2.54)
+ 85. dengl=False nu=False 33601 ==> name=False lb=False 33058    <conf:(0.98)> lift:(1.03) lev:(0.02) [841] conv:(2.54)
+ 86. name=False 34781 ==> dengl=False pa=False 34121    <conf:(0.98)> lift:(1) lev:(0) [0] conv:(1)
+ 87. nu=False 33802 ==> lb=False 33118    <conf:(0.98)> lift:(1.02) lev:(0.02) [708] conv:(2.03)
+ 88. name=False nu=False 33802 ==> lb=False 33118    <conf:(0.98)> lift:(1.02) lev:(0.02) [708] conv:(2.03)
+ 89. nu=False 33802 ==> name=False lb=False 33118    <conf:(0.98)> lift:(1.02) lev:(0.02) [708] conv:(2.03)
+ 90. dengl=False 34302 ==> nu=False 33601    <conf:(0.98)> lift:(1.01) lev:(0.01) [264] conv:(1.38)
+ 91. name=False dengl=False 34302 ==> nu=False 33601    <conf:(0.98)> lift:(1.01) lev:(0.01) [264] conv:(1.38)
+ 92. dengl=False 34302 ==> name=False nu=False 33601    <conf:(0.98)> lift:(1.01) lev:(0.01) [264] conv:(1.38)
+ 93. dengl=False pa=False 34121 ==> nu=False 33420    <conf:(0.98)> lift:(1.01) lev:(0.01) [259] conv:(1.37)
+ 94. name=False dengl=False pa=False 34121 ==> nu=False 33420    <conf:(0.98)> lift:(1.01) lev:(0.01) [259] conv:(1.37)
+ 95. dengl=False pa=False 34121 ==> name=False nu=False 33420    <conf:(0.98)> lift:(1.01) lev:(0.01) [259] conv:(1.37)
+ 96. dengl=False 34302 ==> fraspm=False 33571    <conf:(0.98)> lift:(1.01) lev:(0.01) [462] conv:(1.63)
+ 97. name=False dengl=False 34302 ==> fraspm=False 33571    <conf:(0.98)> lift:(1.01) lev:(0.01) [462] conv:(1.63)
+ 98. dengl=False 34302 ==> name=False fraspm=False 33571    <conf:(0.98)> lift:(1.01) lev:(0.01) [462] conv:(1.63)
+ 99. dengl=False pa=False 34121 ==> fraspm=False 33390    <conf:(0.98)> lift:(1.01) lev:(0.01) [456] conv:(1.62)
+100. name=False dengl=False pa=False 34121 ==> fraspm=False 33390    <conf:(0.98)> lift:(1.01) lev:(0.01) [456] conv:(1.62)
+
